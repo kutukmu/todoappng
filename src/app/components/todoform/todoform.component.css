@@ -1,0 +1,20 @@
+.example-full-width {
+  flex: 3;
+}
+
+.input {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.switch-button {
+  margin-bottom: 5px;
+}

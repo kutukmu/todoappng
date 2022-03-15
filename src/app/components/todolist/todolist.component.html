@@ -1,0 +1,15 @@
+<div class="tasks-container">
+  <ul class="tasks-list">
+    <li class="tasks-item" (click)="handleAll()">All tasks</li>
+    <li class="tasks-item" (click)="handleCompleted()">Completed tasks</li>
+    <li class="tasks-item" (click)="handleActive()">Active tasks</li>
+  </ul>
+
+  <div class="item-list">
+    <ul>
+      <li *ngFor="let item of list" class="mt-3">
+        <app-todoitem [item]="item"></app-todoitem>
+      </li>
+    </ul>
+  </div>
+</div>

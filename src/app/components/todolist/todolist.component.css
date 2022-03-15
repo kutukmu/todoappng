@@ -1,0 +1,29 @@
+.tasks-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.tasks-item {
+  margin: 0;
+  padding: 5px 10px;
+  background-color: #a2a8d3;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.349);
+  cursor: pointer;
+}
+
+.tasks-item:active {
+  box-shadow: none;
+  transform: translateY(2px);
+  background-color: #8d95d1;
+}
+
+.item-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,33 @@
+<div class="todo-form">
+  <form (ngSubmit)="handleSubmit()" #f="ngForm">
+    <div class="input">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Item</mat-label>
+        <input
+          matInput
+          color="white"
+          placeholder="Ex. Buy Eggs"
+          name="name"
+          [(ngModel)]="name"
+          required
+        />
+      </mat-form-field>
+      <div class="form-bottom">
+        <mat-slide-toggle
+          class="switch-button"
+          [class.mat-checked]="isActive"
+          (click)="handleSwitch()"
+          >{{ isActive ? "Active" : "Completed" }}</mat-slide-toggle
+        >
+        <button
+          mat-raised-button
+          color="accent"
+          type="submit"
+          [disabled]="!f.valid"
+        >
+          {{ isEditing ? "Edit" : "Add" }}
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

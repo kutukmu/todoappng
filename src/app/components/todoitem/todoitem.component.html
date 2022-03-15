@@ -1,0 +1,16 @@
+<mat-card class="d-flex justify-content-between">
+  <div class="item-header">
+    <span
+      class="item-status"
+      [ngClass]="item.status == 'active' ? 'green' : 'red'"
+      >{{ item.status | uppercase }}</span
+    >
+    <span>{{ item.name }}</span>
+  </div>
+  <div class="buttons-container">
+    <div>
+      <mat-icon class="icon edit" (click)="handleClick()">edit</mat-icon>
+      <mat-icon class="icon del" (click)="openDialog()">delete</mat-icon>
+    </div>
+  </div>
+</mat-card>

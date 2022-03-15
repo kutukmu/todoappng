@@ -1,0 +1,29 @@
+.del {
+  color: #f95959;
+}
+
+.edit {
+  color: #42b883;
+  margin-right: 1rem;
+}
+
+.item-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-date {
+  font-size: 10px;
+}
+
+.item-status {
+  font-size: 8px;
+}
+
+.red {
+  color: #9f1e49;
+}
+
+.green {
+  color: #a2c11c;
+}

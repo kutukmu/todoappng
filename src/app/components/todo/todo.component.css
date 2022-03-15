@@ -1,0 +1,9 @@
+body {
+  background-color: #233142;
+}
+
+.column {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
